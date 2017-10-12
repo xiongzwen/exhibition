@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -223,23 +224,36 @@
 		</style>
 	</head>
 	<body>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-86951-15']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 
 		<div id="panel" class="collapsed">
-			<h1><a href="http://threejs.org">three.js</a> / examples</h1>
+			<h1>机器人展示中心</h1>
 			<a id="expandButton" href="#">
 				<span></span>
 				<span></span>
 				<span></span>
 			</a>
 			<div class="filterBlock" >
-				<input type="text" id="filterInput" placeholder="Type to filter"/>
+				<input type="text" id="filterInput" placeholder="快 速 检 索"/>
 				<a href="#" id="clearFilterButton" >x</a>
 			</div>
 			<div id="content"></div>
 		</div>
 		<iframe id="viewer" name="viewer" allowfullscreen allowvr onmousewheel=""></iframe>
 
-		<script src="files.js"></script>
+		<script src="https://threejs.org/examples/files.js"></script>
 
 		<script>
 
@@ -280,13 +294,13 @@
 		var button = document.createElement( 'div' );
 		button.id = 'button';
 		button.textContent = 'View source';
-		button.addEventListener( 'click', function ( event ) {
+		//button.addEventListener( 'click', function ( event ) {
 
-			window.open( 'https://github.com/mrdoob/three.js/blob/master/examples/' + selected + '.html' );
+			//window.open( 'https://github.com/mrdoob/three.js/blob/master/examples/' + selected + '.html' );
 
-		}, false );
-		button.style.display = 'none';
-		document.body.appendChild( button );
+		//}, false );
+		//button.style.display = 'none';
+		//document.body.appendChild( button );
 
 		var links = {};
 		var selected = null;
